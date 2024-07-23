@@ -1,1 +1,17 @@
-{ "version": 2, "rewrites": [{ "source": "/(.*)", "destination": "/api" }] }
+{
+    "version": 2,
+    "projectId": "prj_I2v2eAMWfawRPVeaM9RYkK4xmU04",
+    "orgId": "team_SFW3tne9qfxeGR3z4NKcsykE",
+    "builds": [
+      {
+        "src": "api/index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "api/index.js"
+      }
+    ]
+  }
