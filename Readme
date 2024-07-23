@@ -1,0 +1,137 @@
+Sure! Here's a sample `README.md` file for your project:
+
+---
+
+# Ron Swanson Quotes
+
+This project is a web application that displays random quotes from Ron Swanson. The application is built using Express/Node.js and integrates with the Ron Swanson Quotes API. The project is deployed on Vercel and can be accessed via the subpath `https://www.angushally.com/ron_swanson_quotes`.
+
+## Features
+
+- Fetches and displays random Ron Swanson quotes.
+- Uses Axios to make HTTP requests to the Ron Swanson Quotes API.
+- Utilizes EJS for templating.
+- Deployed on Vercel.
+
+## Technologies Used
+
+- Node.js
+- Express.js
+- Axios
+- EJS
+- Vercel
+
+## Installation
+
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/anguspersonal/Ron-Swanson-Quotes.git
+   cd Ron-Swanson-Quotes
+   ```
+
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+
+3. **Create a `.gitignore` file:**
+   ```sh
+   touch .gitignore
+   ```
+
+4. **Add the following content to the `.gitignore` file:**
+   ```gitignore
+   node_modules/
+   .env
+   logs/
+   *.log
+   coverage/
+   .next/
+   .nuxt/
+   .cache/
+   dist/
+   .vuepress/dist/
+   .serverless/
+   .fusebox/
+   .sass-cache/
+   bower_components/
+   .idea/
+   .vscode/
+   *.sublime-project
+   *.sublime-workspace
+   ```
+
+5. **Create a `vercel.json` file:**
+   ```sh
+   touch vercel.json
+   ```
+
+6. **Add the following content to the `vercel.json` file:**
+   ```json
+   {
+     "redirects": [
+       {
+         "source": "/ron_swanson_quotes/(.*)",
+         "destination": "/$1",
+         "permanent": true
+       }
+     ]
+   }
+   ```
+
+## Usage
+
+1. **Start the server:**
+   ```sh
+   npm start
+   ```
+
+2. **Visit the application in your browser:**
+   ```
+   http://localhost:3000
+   ```
+
+## Deployment
+
+The project is deployed on Vercel and can be accessed at `https://www.angushally.com/ron_swanson_quotes`.
+
+1. **Install Vercel CLI (if not already installed):**
+   ```sh
+   npm install -g vercel
+   ```
+
+2. **Deploy with Vercel:**
+   ```sh
+   vercel
+   ```
+
+   Follow the prompts to configure your deployment.
+
+3. **Link local project to Vercel (optional but recommended):**
+   ```sh
+   vercel link
+   ```
+
+4. **Redeploying:**
+   To redeploy changes after the initial deployment:
+   ```sh
+   git add .
+   git commit -m "Your commit message"
+   git push
+   vercel --prod
+   ```
+
+## License
+
+This project is licensed under the MIT License.
+
+## Acknowledgements
+
+- [Ron Swanson Quotes API](http://ron-swanson-quotes.herokuapp.com/)
+- [Express.js](https://expressjs.com/)
+- [Node.js](https://nodejs.org/)
+- [Vercel](https://vercel.com/)
+
+---
+
+Feel free to customize this `README.md` file further based on your specific needs and preferences.
