@@ -1,0 +1,80 @@
+/* Universal styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+header {
+    color: black;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+main {
+    padding: 2rem;
+    background-color: #fff;
+    /* Removed duplicate padding declaration */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quote {
+    width: 70%; /* Adjust the width as needed */
+    margin: 0 auto;
+    padding: 10px;
+    display: block;
+}
+
+img.quote {
+    border-radius: 10px;
+    width: 70%; /* Ensure the image has the same width as the quote */
+    display: block;
+    margin: 5 auto;
+    
+}
+
+pre.quote {
+    word-wrap: break-word;
+    white-space: normal; /* Ensures text wraps within the pre */
+    width: 70%; /* Ensure the pre has the same width */
+    margin: 0 auto;
+    display: block;
+    padding: 10px; /* Optional: Add padding for better visibility */
+    text-align: center;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Specific flexbox layouts */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
