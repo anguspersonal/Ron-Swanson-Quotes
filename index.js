@@ -24,10 +24,9 @@ app.get("/", async(req, res) => {
         console.log(JSON.stringify(result.data));
     } catch (error) {
         console.log(error.result);
-        res.status(500).send("An error occurred");
+        res.status(404).send("An error occurred");
       }
 });
-
 
 // Listen on your predefined port and start the server.
 app.listen(port, () => {
