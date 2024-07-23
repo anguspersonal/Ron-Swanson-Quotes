@@ -1,18 +1,17 @@
 {
-    "projectId":"prj_I2v2eAMWfawRPVeaM9RYkK4xmU04",
-    "orgId":"team_SFW3tne9qfxeGR3z4NKcsykE",
-     "version": 2, 
-     "rewrites": [{ "source": "/(.*)", "destination": "/api" }],
-      "builds": [
-        {
-          "src": "index.js",
-          "use": "@vercel/node"
-        }
-      ],
-      "routes": [
-        {
-          "src": "/(.*)",
-          "dest": "index.js"
-        }
-      ]
-    }
+    "version": 2,
+    "projectId": "prj_I2v2eAMWfawRPVeaM9RYkK4xmU04",
+    "orgId": "team_SFW3tne9qfxeGR3z4NKcsykE",
+    "builds": [
+      {
+        "src": "index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "index.js"
+      }
+    ]
+  }
