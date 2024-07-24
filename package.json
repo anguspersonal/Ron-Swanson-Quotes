@@ -2,10 +2,11 @@
   "name": "api-integration-project",
   "version": "1.0.0",
   "description": "A project integrating public APIs using Express.js and Axios",
-  "main": "app.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "node api/index.js",
+    "dev": "nodemon api/index.js"
   },
   "author": "Your Name",
   "license": "MIT",

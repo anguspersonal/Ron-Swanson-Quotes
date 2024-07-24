@@ -9,9 +9,6 @@ import path from "path"; // Path to files
 const app = express();
 const port = process.env.PORT || 3000;
 
-
-
-
 // Use the public folder for static files.
 
 app.use(express.static("public"));
@@ -36,4 +33,4 @@ app.listen(port, () => {
     console.log(`Listening on port ${port}`);
   });
 
-module.exports = app;
+//module.exports = app;
